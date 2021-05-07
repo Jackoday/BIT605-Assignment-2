@@ -181,7 +181,8 @@ list_unsorted = []
 with open("BIT605_unsorted_data.csv") as csv_file:
   reader = csv.reader(csv_file, delimiter=",")
   for row in reader:
-    list_unsorted.append(user(row[0], row[1], row[2], row[3])),       reader.__next__
+    list_unsorted.append(user(row[0], row[1], row[2], row[3])),
+    reader.__next__
 
 #Run bubble sort
 bubbleList = list_unsorted
